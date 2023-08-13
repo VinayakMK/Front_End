@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Sign-Up</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <form class="div-form" id="signup" action="index.html" method="post">
+    
+        <div class="wrapper">
+            <form action="">
+                <h1>Sign-Up</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" name="username" id="username" onkeyup="validateName()">
+                    <i class='bx bxs-user' ></i>
+                    <span id="username-error" style="color: red; padding-left: 20px; padding-top: 20px;"></span>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Email" name="email" id="email" onkeyup="validateEmail()">
+                    <i class='bx bxs-user' ></i>
+                    <span id="email-error" style="color: red; padding-left: 20px; padding-top: 20px;"></span>
+                </div>
+    
+                <div class="input-box">
+                    <input type="password" placeholder="password" name="password" id="password" onkeyup="validatePassword()">
+                    <i class='bx bxs-lock-alt' ></i>
+                    <span id="password-error" style="color: red; padding-left: 20px; padding-top: 20px;"></span>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Re-enter password" name="repeat" id="repeat" onkeyup="validateRepeat()">
+                    <span id="repeat-error" style="color: red; padding-left: 20px; padding-top: 20px;"></span>
+                </div>
+
+    
+               <button type="submit" class="btn" onclick="return validateForm()">Confirm</button>
+               <span id="submit-error" style="color: red; padding-left: 20px; padding-top: 20px;"></span>
+    
+            </form>
+       </div>
+        
+        
+
+    </form> 
+    
+    <script src="./js/signup.js"></script>
+
+</body>
+</html> 
